@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Panic AI Tutors - AI Education for Lawrence Schools</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        .logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            padding: 1rem 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #ecf0f1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .course-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .submit-button {
+            background-color: #27ae60;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .submit-button:hover {
+            background-color: #219a52;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Screenshot 2025-02-01 135954.png" alt="Don't Panic AI Tutors Logo" class="logo">
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Master AI Skills for Tomorrow's World</h2>
+            <p>Specialized AI education programs for K-12 students in Lawrence Public Schools</p>
+            <a href="#contact" class="cta-button">Start Learning Today</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="why-us">
+            <h2>Why Choose Our AI Programs?</h2>
+            <ul>
+                <li>✅ Aligned with Lawrence Public School curriculum standards</li>
+                <li>✅ Age-appropriate AI learning paths</li>
+                <li>✅ Hands-on projects with real-world applications</li>
+                <li>✅ Certified AI educators & technologists</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>Our Course Offerings</h2>
+            <div class="courses">
+                <div class="course-card">
+                    <h3>Elementary School Basics</h3>
+                    <p>Introduction to AI concepts through interactive games and storytelling</p>
+                </div>
+                <div class="course-card">
+                    <h3>Middle School Explorers</h3>
+                    <p>Foundations of machine learning and ethical AI development</p>
+                </div>
+                <div class="course-card">
+                    <h3>High School Innovators</h3>
+                    <p>Advanced AI programming and real-world problem solving</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://formspree.io/f/xvojnzqw" method="POST">
+                <div class="form-group">
+                    <label for="name">Parent/Guardian Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Format: 123-456-7890</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            
+            <p>Or reach us directly:<br>
+            📞 (785) 393-7817<br>
+            📧 dontpanicaitutors@gmail.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 Don't Panic AI Tutors - Proudly serving Lawrence, Kansas students</p>
+        <p>Partnered with Lawrence Public School District</p>
+    </footer>
+</body>
+</html>
