@@ -6,11 +6,12 @@
     <title>Don't Panic AI Tutors - AI Education for Lawrence Schools</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Times New Roman', sans-serif;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
             background-color: #f4f7f6;
+            font-size: 18px;
         }
 
         .logo {
@@ -39,6 +40,7 @@
             text-decoration: none;
             margin: 0 1rem;
             font-weight: bold;
+            font-size: 1.1rem;
         }
 
         .container {
@@ -53,14 +55,20 @@
             background-color: #ecf0f1;
         }
 
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.8rem; }
+        h4 { font-size: 1.5rem; }
+
         .cta-button {
             display: inline-block;
             background-color: #e74c3c;
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.2rem 2.4rem;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 1rem;
+            font-size: 1.2rem;
         }
 
         .courses {
@@ -75,6 +83,7 @@
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 1.05rem;
         }
 
         footer {
@@ -83,6 +92,7 @@
             text-align: center;
             padding: 2rem;
             margin-top: 3rem;
+            font-size: 1.1rem;
         }
 
         .contact-form {
@@ -102,6 +112,7 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: bold;
+            font-size: 1.1rem;
         }
 
         input, textarea {
@@ -110,16 +121,17 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: 1.1rem;
         }
 
         .submit-button {
             background-color: #27ae60;
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.2rem 2.4rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         .submit-button:hover {
@@ -131,6 +143,53 @@
             padding: 1.5rem;
             border-left: 4px solid #2c3e50;
             margin: 2rem 0;
+            font-size: 1.1rem;
+        }
+
+        .grade-level {
+            color: #2c3e50;
+            background-color: #ecf0f1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .tools-used {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .tool {
+            display: inline-block;
+            background-color: #34495e;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 3px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+
+        .tool:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.5rem; }
+            
+            .cta-button, .submit-button {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
         }
     </style>
 </head>
@@ -157,10 +216,10 @@
     <div class="container">
         <section id="about">
             <h2>About Don't Panic AI Tutors</h2>
-            <p>Founded in 2024 by a team of passionate individuals, Don't Panic AI Tutors is Lawrence's first AI education provider dedicated to preparing students for the digital future. Our name reflects our philosophy: With the right preparation, there's no need to fear the AI revolution!</p>
+            <p>Founded in 2024 by a team of passionate students, Don't Panic AI Tutors is Lawrence's first AI education provider dedicated to preparing students for the digital future. Our name reflects our philosophy: With the right preparation, there's no need to fear the AI revolution!</p>
 
             <h3>Our Mission</h3>
-            <p>At Don't Panic AI Tutors, we are your friendly guides to the universe of artificial intelligence—making AI fluency fun, accessible, and panic-free for the next generation of explorers!</p>
+            <p>We empower K-12 students in Lawrence Public Schools with:</p>
             <ul>
                 <li>✅ Practical AI literacy skills</li>
                 <li>✅ Ethical technology understanding</li>
@@ -171,7 +230,7 @@
             <div class="courses">
                 <div class="course-card">
                     <h4>Local Expertise</h4>
-                    <p>Designed specifically for Lawrence students by educators who understand our community</p>
+                    <p>Designed specifically for Lawrence students by students who understand our community</p>
                 </div>
                 <div class="course-card">
                     <h4>AI Fluency Focus</h4>
@@ -179,7 +238,7 @@
                 </div>
                 <div class="course-card">
                     <h4>Accessible Learning</h4>
-                    <p>Scholarships available for LPS students through our community partnerships</p>
+                    <p>Make it affordable for LPS students through our community partnerships</p>
                 </div>
             </div>
 
@@ -190,30 +249,88 @@
             </blockquote>
         </section>
 
-        <section id="why-us">
-            <h2>Why Choose Our AI Programs?</h2>
-            <ul>
-                <li>✅ By Students & For Students</li>
-                <li>✅ Age-appropriate AI learning paths</li>
-                <li>✅ Hands-on projects with real-world applications</li>
-                <li>✅ Ethics first curriculum</li>
-            </ul>
-        </section>
-
         <section id="courses">
             <h2>Our Course Offerings</h2>
             <div class="courses">
                 <div class="course-card">
                     <h3>Elementary School Basics</h3>
-                    <p>Introduction to AI concepts through interactive games and storytelling</p>
+                    <div class="grade-level">Grades K-5</div>
+                    <div class="course-details">
+                        <h4>AI Storytime Adventures</h4>
+                        <ul>
+                            <li>🤖 Meet Our Robot Friends
+                                <ul>
+                                    <li>What robots can and can't do</li>
+                                    <li>Programming story characters</li>
+                                </ul>
+                            </li>
+                            <li>🎨 Pattern Power
+                                <ul>
+                                    <li>Shape recognition games</li>
+                                    <li>Weather prediction through patterns</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="tools-used">
+                            <strong>Learning Tools:</strong>
+                            <span class="tool">Scratch AI</span>
+                            <span class="tool">Google Quick Draw</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="course-card">
                     <h3>Middle School Explorers</h3>
-                    <p>Foundations of machine learning and ethical AI development</p>
+                    <div class="grade-level">Grades 6-8</div>
+                    <div class="course-details">
+                        <h4>AI Foundations Bootcamp</h4>
+                        <ul>
+                            <li>🧠 Machine Learning Basics
+                                <ul>
+                                    <li>Neural networks through cookie recipes</li>
+                                    <li>Training image recognition models</li>
+                                </ul>
+                            </li>
+                            <li>⚖️ Ethical AI Challenges
+                                <ul>
+                                    <li>Bias detection in social media algorithms</li>
+                                    <li>Privacy paradox simulations</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="tools-used">
+                            <strong>Learning Tools:</strong>
+                            <span class="tool">Teachable Machine</span>
+                            <span class="tool">MIT App Inventor</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="course-card">
                     <h3>High School Innovators</h3>
-                    <p>Advanced AI programming and real-world problem solving</p>
+                    <div class="grade-level">Grades 9-12</div>
+                    <div class="course-details">
+                        <h4>AI Engineering Intensive</h4>
+                        <ul>
+                            <li>💻 Python Programming Lab
+                                <ul>
+                                    <li>TensorFlow/Keras fundamentals</li>
+                                    <li>Natural Language Processing projects</li>
+                                </ul>
+                            </li>
+                            <li>📊 Big Data Challenges
+                                <ul>
+                                    <li>Analyze Lawrence community datasets</li>
+                                    <li>Predictive maintenance for school infrastructure</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="tools-used">
+                            <strong>Professional Tools:</strong>
+                            <span class="tool">Python</span>
+                            <span class="tool">TensorFlow</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
