@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Panic AI Tutors - AI Education for Lawrence Schools</title>
+    <style>
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(99, 208, 255);
+            font-size: 18px;
+        }
+
+        .logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            padding: 1rem 0;
+        }
+
+        header {
+            background-color: #63c8f4;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #98eaff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #98eaff;
+        }
+
+        h1 { font-size: 2.8rem; text-align: center; background-color:rgb(99, 208, 255);}
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.8rem; }
+        h4 { font-size: 1.5rem; }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 1.2rem 2.4rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            background-color: #98eaff;
+            border-color: #000000;
+            border-width: 10px;
+        }
+
+        .course-card {
+            background-color: rgb(99, 255, 229);
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 1.05rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+        }
+
+        .submit-button {
+            background-color: #27ae60;
+            color: white;
+            padding: 1.2rem 2.4rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .submit-button:hover {
+            background-color: #219a52;
+        }
+
+        blockquote {
+            background-color: #88e7ff;
+            padding: 1.5rem;
+            border-left: 4px solid #2c3e50;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+        }
+
+        .grade-level {
+            color: #2c3e50;
+            background-color: #ecf0f1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .tools-used {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .tool {
+            display: inline-block;
+            background-color: #34495e;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 3px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+
+        .tool:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.5rem; }
+            
+            .cta-button, .submit-button {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+        }
+        .banner {
+        overflow: hidden; /* Overflow */
+        white-space: nowrap; /* Prevent line breaks */
+        background-color: #63c8f4; /* Dark background */
+        color: #000000; /* White text color */
+        padding: 10px 0; /* Padding */
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+        
+    .banner-content {
+        display: inline-block;
+        animation: scroll-banner 15s linear infinite; /* Animation effect */
+    }
+    
+    @keyframes scroll-banner {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Screenshot 2025-02-01 135954.png" alt="Don't Panic AI Tutors Logo" class="logo">
+        <div class="banner">
+            <div class="banner-content">
+                <span>✅ Practical AI literacy skills! | ✅ Ethical technology understanding! | ✅ Future-ready problem-solving abilities! | ✅Panic Free Learning Experience For Everyone! | ✅Fun and exciting activities! </span>
+        </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="Don'tPanicAITutors.html">Home</a>
+        <a href="Don'tPanicAITutorsAbout.html">About</a>
+        <a href="Don'tPanicAITutorsCourses.html">Courses</a>
+        <a href="Don'tPanicAITutorsPricing.html">Pricing</a>
+        <a href="Don'tPanicAITutorsContact.html">Contact</a>
+
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Master AI Skills for Tomorrow's World</h2>
+            <p>Personalized AI education programs for all learners, <strong><em>all ages and skill levels!</em></strong></p>
+            <a href="Don'tPanicAITutorsContact.html" class="cta-button">Start Learning Today</a>
+        </div>
+    </div>
+            <h1>Why We're Different</h1>
+            <div class="courses">
+                <div class="course-card">
+                    <h4>Local Expertise</h4>
+                    <p>Designed specifically for Lawrence students by students who understand our community!</p>
+                </div>
+                <div class="course-card">
+                    <h4>AI Fluency Focus</h4>
+                    <p>We go beyond basic digital literacy to teach actual AI system interaction!</p>
+                </div>
+                <div class="course-card">
+                    <h4>Accessible Learning</h4>
+                    <p>Make it affordable for LPS students through our community partnerships!</p>
+                </div>
+            </div>
+
+            <blockquote>
+                <em>"The perfect blend of technical education and human values - exactly what our students need!"</em>
+                <br>
+                - Surveyed Parent
+            </blockquote>
+        </section>
+        <footer>
+            <h6>© 2024 Don't Panic AI Tutors - Proudly serving Lawrence, Kansas students - All Rights Reserved</h6>
+            <h6>We are actively seeking opportunities to collaborate with Lawrence Public Schools (USD 497) to support AI fluency initiatives. If you’re interested in working with us, let’s connect!</h6>
+    </footer>
+</body>
+</html>
