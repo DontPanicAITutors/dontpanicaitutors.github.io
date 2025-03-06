@@ -15,8 +15,13 @@
         }
         p {
             font-size: 1.1rem;
-            text-align: left;
+            text-align: center;
             margin: auto;
+        }
+        p1 {
+            font-size: 1.1rem;
+            text-align: center;
+            margin: none;
         }
         .logo {
             max-width: 400px;
@@ -28,7 +33,7 @@
         }
 
         header {
-            background-color: #63c8f4;
+            background-color: #ffffff;
             text-align: center;
             padding: 1rem 2rem;
         }
@@ -51,7 +56,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: #98eaff;
+            background-color: #ffffff;
         }
 
         .hero {
@@ -64,6 +69,8 @@
         h2 { font-size: 2.2rem; text-align:center; }
         h3 { font-size: 1.8rem; text-align:center; }
         h4 { font-size: 1.5r; text-align:center; }
+        h5 { text-align:center; margin: 20; padding: 20;}
+        h6 { font-size: 1.6rem; text-align:center; margin: 20px 10px 0px 10px; padding: 0px;}
 
         .cta-button {
             display: inline-block;
@@ -84,9 +91,9 @@
         }
 
         .course-card {
-            background-color: rgb(99, 208, 255);
+            background-color: rgb(120, 195, 211);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -98,7 +105,7 @@
         .learning:hover {
             background-color: rgb(153, 252, 173);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -110,7 +117,7 @@
         .learning1:hover {
             background-color: rgb(254, 139, 139);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -122,7 +129,7 @@
         .learning2:hover {
             background-color: rgb(248, 253, 124);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -134,7 +141,7 @@
         .learning3:hover {
             background-color: rgb(156, 255, 227);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -146,7 +153,7 @@
         .learning4:hover {
             background-color: rgb(255, 194, 144);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -158,7 +165,7 @@
         .learning5:hover {
             background-color: rgb(241, 171, 252);
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
             text-align: center;
@@ -174,6 +181,7 @@
             margin-top: 2rem;
             display: flex;
             flex-direction: row;
+            border-radius: 50;
         }
 
         .founder {
@@ -185,8 +193,9 @@
         .founder img {
             width: 100%;
             max-width: 300px;
-            height: auto;
-            border-radius: 8px;
+            height: 335px;
+            border-radius: 50px;
+            margin-bottom: 3rem;
         }
 
         footer {
@@ -196,6 +205,9 @@
             padding: 2rem;
             margin-top: 3rem;
             font-size: 1.1rem;
+            width: 100%;
+            margin:0;
+            padding:2rem 0;
         }
 
         .form-group {
@@ -220,7 +232,7 @@
         .banner {
         overflow: hidden; /* Overflow */
         white-space: nowrap; /* Prevent line breaks */
-        background-color: #63c8f4; /* Dark background */
+        background-color: #ffffff; /* Dark background */
         color: #000000; /* White text color */
         padding: 10px 0; /* Padding */
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -228,7 +240,7 @@
         
     .banner-content {
         display: inline-block;
-        animation: scroll-banner 15s linear infinite; /* Animation effect */
+        animation: scroll-banner 20s linear infinite; /* Animation effect */
     }
     
     @keyframes scroll-banner {
@@ -261,49 +273,50 @@
     <div class="container">
         <section id="about">
             <h2> About the Founders</h2>
-            <h4>Founded in 2024 by a team of passionate students, Don't Panic AI Tutors is Lawrence's first AI education provider dedicated to preparing students for the digital future.</h4>
+            <p1>Don't Panic AI Tutors is a locally owned LLC in Lawrence, Kansas, founded in 2024 by two passionate middle and high school students. Inspired by <em>The Hitchhiker’s Guide to the Galaxy</em> by Douglas Adams, our name reflects our belief that learning AI should be an exciting adventure—no panic required! 🚀</p1>
             <div class="founders">
                 <div class="course-card founder">
                     <h3>Lawrence</h3>
                     <img src="Lawrence.png" alt="Lawrence">
-                    <p>Lawrence is a freshman at Lawrence Virtual High School with a passion for STEM, particularly Artificial Intelligence. He enjoys staying up-to-date with the latest AI news and breakthroughs, constantly seeking to expand his knowledge in this exciting field. In 2024, Dao and his team won the <a href="https://lawrencekstimes.com/2024/07/24/lvs-national-stem-competition/">eCybermission National STEM Competition</a> with a project on AI, and specifically ChatGPT, in schools. He and his team's actions led to the creation of Lawrence Public Schools's first Generative AI Task Force. In 2025, Dao qualified for the Great Plains Regional Junior Science and Humanities Symposium, where his research on AI student surveillance tools in schools garnered him a first place finish. He will go on to compete at nationals later this year (2025).</p>
+                    <p>Lawrence is a freshman at Lawrence Virtual High School with a passion for STEM, particularly Artificial Intelligence. He enjoys staying up-to-date with the latest AI news and breakthroughs, constantly seeking to expand his knowledge in this exciting field. In 2024, Lawrence and his team won the <a href="https://lawrencekstimes.com/2024/07/24/lvs-national-stem-competition/">eCybermission National STEM Competition</a> with a project on AI and ChatGPT in schools. Their project inspired the creation of Lawrence Public Schools's first Generative AI Committee. In February 2025, Lawrence competed in the Great Plains Regional Junior Science and Humanities Symposium, where his research on AI student surveillance tools in schools earned him a first place finish. He will go on to compete at nationals in April 2025.</p>
                 </div>
                 <div class="course-card founder">
                     <h3>Daniel</h3>
                     <img src="Daniel.png" alt="Daniel">
-                    <p>Daniel is a 7th grader with a passion for programming, AI, and playing with Rubik's Cubes. His favorite subjects are math and history. The brothers passion for AI led them to create "Don't Panic AI Tutors". Dao helped his team win the 2024 eCybermission National STEM Competition. Additionally, Dao and his brother have presented their research to the district board of education numerous times. The idea for "Don't Panic AI Tutors" also netted the Dao bros a <a href="https://lawrencekstimes.com/2025/02/10/2025-dgco-yec/">first place finish at the 2025 Douglas County YEC</a>. The brothers are set to compete at the Kansas Entrepreneurship Challenge later this year (2025). For more info about Daniel, check out <a href="https://d-perm.github.io/index.html/">this link here</a>.</p>
+                    <p>Daniel is a 7th grader with a passion for programming, AI, and playing with Rubik's Cubes. His favorite subjects are math and history. Daniel helped his team win the 2024 eCybermission National STEM Competition. Additionally, Daniel and his brother have presented their research to the district board of education numerous times. The idea for "Don't Panic AI Tutors" also netted the brothers a <a href="https://lawrencekstimes.com/2025/02/10/2025-dgco-yec/">first place finish at the 2025 Douglas County YEC</a>. The brothers are set to compete at the Kansas Entrepreneurship Challenge in April 2025. For more info about Daniel, check out <a href="https://d-perm.github.io/index.html/">this link here</a>.</p>
                 </div>
             </div>
             <h3>Our Mission</h3>    
-            <h4>Don't Panic AI Tutors was founded through a mix of our team's passion and our observation that our community lacks a dedicated AI program for such an important technology.</h4>
-            <h4>Our mission is to provide students with the tools and knowledge they need to succeed in a world increasingly shaped by AI. We believe that AI literacy is a critical skill for the future, and we are committed to helping students develop the skills they need to thrive in the digital age.</h4>
-            <h4>To do this, we made sure that we offer:</h4>
+            <p>Our mission is to make artificial intelligence (AI) fluency fun, accessible, and engaging for learners of all ages and skill levels. Through personalized tutoring and interactive workshops, we demystify AI, spark curiosity, and equip learners with the skills they need to thrive in a tech-driven world. We collaborate with local AI experts and develop a network of AI mentors across the U.S. to bring high-quality AI education to our community. While we are still early in our journey, our enthusiasm for AI—combined with our strong STEM background—drives us to create impactful learning experiences. Whether you are a student, professional, or lifelong learner, we're here to help you navigate AI with confidence!</p>
+            <h6>To acomplish this, we offer:</h6>
             <div class="container">
                 <div class="courses">
                     <div class="course-card learning">
-                        <h4>High-quality, personalized AI education programs for all learners, all ages, and skill levels!</h4>
+                        <p1>High-quality, personalized AI education programs for all learners, all ages, and skill levels!</p1>
                     </div>
                     <div class="course-card learning1">
-                        <h4>Local expertise, designed specifically for Lawrence students by students who understand our community!</h4>
+                        <p1>Local expertise, designed specifically for Lawrence students by students who understand our community!</p1>
                     </div>
                     <div class="course-card learning2">
-                        <h4>Hands-on learning experiences that engage students and help them develop real-world AI skills!</h4>
+                        <p1>Hands-on learning experiences that engage students and help them develop real-world AI skills!</p1>
                     </div>
                     <div class="course-card learning3">
-                        <h4>Support for Lawrence Public Schools (USD 497) AI fluency initiatives!</h4>
+                        <p1>Support for Lawrence Public Schools (USD 497) AI fluency initiatives!</p1>
                     </div>
                     <div class="course-card learning4">
-                        <h4>Occasional talks from local graduate student and experts to expose to students high level content, in cool ways!</h4>
+                        <p1>Occasional talks from local graduate student and experts to expose to students high level content, in cool ways!</p1>
                     </div>
                     <div class="course-card learning5">
-                        <h4>Group courses allow students with the same interests to mingle and bulid connections with each other!</h4>
+                        <p1>Group courses allow students with the same interests to mingle and bulid connections with each other!</p1>
                     </div>
+                </div>
                 </div>
                 </div>
         </section>
-    <footer>
-        <h6>© 2024 Don't Panic AI Tutors LLC - Proudly serving Lawrence, Kansas students - All Rights Reserved</h6>
-        <h6>We are actively seeking opportunities to collaborate with Lawrence Public Schools (USD 497) to support AI fluency initiatives. If you’re interested in working with us, let’s connect!</h6>
-</footer>
+        <footer>
+            <h5>© 2024 Don't Panic AI Tutors - Proudly serving Kansans - All Rights Reserved</h5>
+            <h5>Disclaimer: Our website is live, but we are still in the process of rolling out our services! We are excited to launch soon! Thank you for your patience and support!</h5>
+            <h5>We are actively seeking opportunities to collaborate with experts to support AI fluency initiatives. If you’re interested in working with us, let’s connect!</h5>
+        </footer>
 </body>
 </html>
