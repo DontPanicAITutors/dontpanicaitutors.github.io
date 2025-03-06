@@ -103,17 +103,17 @@
         .banner {
         overflow: hidden; /* Overflow */
         white-space: nowrap; /* Prevent line breaks */
-        background-image: url('Background.png'); /* Background image */
-        background-size: cover; /* Ensure the image covers the entire banner */
-        background-position: center; /* Center the image */
-        color: #000000; /* White text color */
+        background-blend-mode: color-dodge; /* Blend mode */
+        color: #d2e1ef; /* White text color */
         padding: 10px 0; /* Padding */
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 1.2rem; /* Font size */
+        font-weight: bold; /* Font weight */
     }
         
     .banner-content {
         display: inline-block;
-        animation: scroll-banner 20s linear infinite; /* Animation effect */
+        animation: scroll-banner 23s linear infinite; /* Animation effect */
     }
     
     @keyframes scroll-banner {
