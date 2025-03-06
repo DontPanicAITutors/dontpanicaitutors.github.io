@@ -16,12 +16,12 @@
         .courses {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-            padding: 0 2rem;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+            padding: 0 0.8rem;
         }
         header {
-            background-color: #63c8f4;
+            background-color: #ffffff;
             text-align: center;
             padding: 1rem 2rem;
         }
@@ -44,8 +44,14 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 1.05rem;
         }
+        .course-card:hover {
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s;
+            background-color: #b2cdec;
+        }
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -55,12 +61,13 @@
             background-color: #ecf0f1;
         }
         h1 { font-size: 2.8rem; }
-        h2 { font-size: 2.2rem; text-align: center; }
+        h2 { font-size: 2.2rem; text-align: center; margin: 20px 10px 5px; padding: 20px 10px 5px;}
         h3 { font-size: 1.8rem; }
-        h4 { font-size: 1.5rem; }
+        h4 { font-size: 1.4rem; text-align: center;}
+        h6 { font-size: 1.3rem; text-align: center; margin: 0; padding: 0;}
         .cta-button {
             display: inline-block;
-            background-color: #e74c3c;
+            background-color: #2f888e;
             color: white;
             padding: 1.2rem 2.4rem;
             text-decoration: none;
@@ -69,7 +76,7 @@
             font-size: 1.2rem;
         }
         button {
-            background-color: #dee200;
+            background-color: rgb(33, 82, 241);
             color: white;
             padding: 0.5rem 1rem;
             border: none;
@@ -94,7 +101,7 @@
         .banner {
         overflow: hidden; /* Overflow */
         white-space: nowrap; /* Prevent line breaks */
-        background-color: #63c8f4; /* Dark background */
+        background-color: #ffffff; /* Dark background */
         color: #000000; /* White text color */
         padding: 10px 0; /* Padding */
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -102,7 +109,7 @@
         
     .banner-content {
         display: inline-block;
-        animation: scroll-banner 15s linear infinite; /* Animation effect */
+        animation: scroll-banner 20s linear infinite; /* Animation effect */
     }
     
     @keyframes scroll-banner {
@@ -112,6 +119,19 @@
         100% {
             transform: translateX(-100%);
         }
+    }
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .bordered-text {
+            border: 2px solid #2c3e50; /* Border width, style, and color */
+            padding: 10px; /* Space between text and border */
+            border-radius: 5px; /* Optional: rounded corners */
+            display: inline-block; /* Optional: to fit the border to the text size */
+        }
+    .grade-level {
+       text-align: center;
     }
     </style>
 </head>
@@ -132,172 +152,266 @@
         <a href="Don'tPanicAITutorsContact.html">Contact</a>
     </nav>
     <section id="courses">
-        <h2>Our Course Offerings</h2>
+        <h2>Sample Course Offerings</h2>
+        <h6>All courses are currently under development.</h6>
         <div class="courses">
             <div class="course-card">
-                <h3>Elementary School Basics</h3>
-                <div class="grade-level">Grades K-5</div>
+                <h4><div class="bordered-text">Elementary School Basics</div></h4>
+                <div class="grade-level">Grades K-1</div>
+                <strong><div class="grade-level">Beginner</div></strong>
                 <div class="course-details">
-                    <h4>AI Storytime Adventures</h4>
+                    <h4>AI Adventures</h4>
                     <ul>
-                        <li>🤖 Meet Our Robot Friends
+                        <li>🤖Introduction to AI!
                             <ul>
-                                <li>What robots can and can't do</li>
-                                <li>Programming story characters</li>
+                                <li>What is AI explained simply!</li>
+                                <li>Use AI to create fun activities/stories!</li>
                             </ul>
                         </li>
-                        <li>🎨 Pattern Power
+                        <li>🎨 Pattern Power!
                             <ul>
-                                <li>Shape recognition games</li>
-                                <li>Weather prediction through patterns</li>
+                                <li>Shape recognition games!</li>
+                                <li>Weather prediction through patterns!</li>
                             </ul>
                         </li>
                     </ul>
                     <div class="tools-used">
                         <strong>Learning Tools:</strong>
                         <div class="vertical-buttons">
-                            <button><a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted">Scratch Programming</a></button>
+                            <button><a href="https://chatgpt.com/">ChatGPT</a></button>
                             <button><a href="https://quickdraw.withgoogle.com/">Google Quick Draw</a></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="course-card">
-                <h3>Middle School Explorers</h3>
+                <h4><div class="bordered-text">Middle School Basics</div></h4>
                 <div class="grade-level">Grades 6-8</div>
+                <strong><div class="grade-level">Beginner</div></strong>
                 <div class="course-details">
-                    <h4>AI Foundations Bootcamp</h4>
+                    <h4>AI Foundations</h4>
                     <ul>
-                        <li>🧠 Machine Learning Basics
+                        <li>🤖Introduction to AI!
                             <ul>
-                                <li>Neural networks through cookie recipes</li>
-                                <li>Training image recognition models</li>
+                                <li>What is AI explained simply!</li>
+                                <li>Explore AI chatbots with fun activities/projects!</li>
                             </ul>
                         </li>
-                        <li>⚖️ Ethical AI Challenges
+                        <li> 💻Scratch programming!
                             <ul>
-                                <li>Bias detection in social media algorithms</li>
-                                <li>Privacy paradox simulations</li>
+                                <li>Using Scratch to begin programming!</li>
+                                <li>Use Scratch to program AI learning models!</li>
                             </ul>
                         </li>
                     </ul>
                     <div class="tools-used">
                         <strong>Learning Tools:</strong>
                         <div class="vertical-buttons">
+                            <button><a href="https://chatgpt.com/">ChatGPT</a></button>
+                            <button><a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted">Scratch Programming</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <h4><div class="bordered-text">High School+ Basics</div></h4>
+                <div class="grade-level">Grades 9-12+beyond</div>
+                <strong><div class="grade-level">Beginner</div></strong>
+                <div class="course-details">
+                    <h4>AI Engineering</h4>
+                    <ul>
+                        <li> 💻Introduction to Artificial Intelligence and Chatbots!
+                            <ul>
+                                <li>Learn what Artificial Intelligence is!</li>
+                                <li>Explore how these sytems work!</li>
+                            </ul>
+                        </li>
+                        <li>📊 Prompt Engineering Workshop!
+                            <ul>
+                                <li>Learn the qualities of an effective prompt!</li>
+                                <li>Practice hands-on prompting chatbots!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="tools-used">
+                        <strong>Professional Tools:</strong>
+                        <div class="vertical-buttons">
+                            <button><a href="https://chatgpt.com/">ChatGPT</a></button>
+                            <button><a href="https://artsandculture.google.com/experiment/jwG3m7wQShZngw">Prompt Engineering Game</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <h4><div class="bordered-text">Elementary School Explorers</div></h4>
+                <div class="grade-level">Grades 2-3</div>
+                <strong><div class="grade-level">Intermediate</div></strong>
+                <div class="course-details">
+                    <h4>AI Adventures</h4>
+                    <ul>
+                        <li>💻 Welcome to the world of AI hallucinations!
+                            <ul>
+                                <li>Introduction to AI hallucinations!</li>
+                                <li>How to check for hallucinations!</li>
+                            </ul>
+                        </li>
+                        <li>📊 Can you recognize real vs. fake?
+                            <ul>
+                                <li>Learn about AI generated text, image, etc qualities!</li>
+                                <li>Practice with fun game and activities!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="tools-used">
+                        <strong>Professional Tools:</strong>
+                        <div class="vertical-buttons">
+                            <button><a href="https://chatgpt.com/">ChatGPT</a></button>
+                            <button><a href="https://sightengine.com/ai-or-not">AI or not game</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <h4><div class="bordered-text">Middle School Explorers</div></h4>
+                <div class="grade-level">Grades 6-8</div>
+                <strong><div class="grade-level">Intermediate</div></strong>
+                <div class="course-details">
+                    <h4>AI Foundations</h4>
+                    <ul>
+                        <li>💻 What is Machine Learning?
+                            <ul>
+                                <li>Introduction to machine learning!</li>
+                                <li>Using ML to predict things!</li>
+                            </ul>
+                        </li>
+                        <li>⚖️ Ethical AI Challenges                           
+                            <ul>
+                                <li>Bias Detection in Social Media Algorithms!</li>
+                                <li>Privacy Paradox Simulations!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="tools-used">
+                        <strong>Professional Tools:</strong>
+                        <div class="vertical-buttons">
                             <button><a href="https://teachablemachine.withgoogle.com/train">Teachable Machine</a></button>
-                            <button><a href="https://appinventor.mit.edu/">MIT App Inventor</a></button>
+                            <button><a href="https://www.ibm.com/think/topics/shedding-light-on-ai-bias-with-real-world-examples">AI Bias Examples</a></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="course-card">
-                <h3>High School Innovators</h3>
-                <div class="grade-level">Grades 9-12</div>
+                <h4><div class="bordered-text">High School+ Explorers</div></h4>
+                <div class="grade-level">Grades 9-12+beyond</div>
+                <strong><div class="grade-level">Intermediate</div></strong>
                 <div class="course-details">
-                    <h4>AI Engineering Intensive</h4>
+                    <h4>AI Engineering</h4>
                     <ul>
-                        <li>💻 Python Programming Lab
+                        <li>💻 Train AI models!
                             <ul>
-                                <li>TensorFlow/Keras fundamentals</li>
-                                <li>Natural Language Processing projects</li>
+                                <li>Learn resources like Scikit-learn, NLTK, or TensorFlow!</li>
+                                <li>Pratice training a model to recognize things!</li>
                             </ul>
                         </li>
-                        <li>📊 Big Data Challenges
+                        <li>📊 Create basic Chatbots!
                             <ul>
-                                <li>Analyze Lawrence community datasets</li>
-                                <li>Predictive maintenance for school infrastructure</li>
+                                <li>Students create a chatbot that can answer basic questions.</li>
+                                <li>Learn how NLP and machine learning power chatbots and context in AI interactions!</li>
                             </ul>
                         </li>
                     </ul>
                     <div class="tools-used">
                         <strong>Professional Tools:</strong>
                         <div class="vertical-buttons">
-                            <button><a href="https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction">AI Python Coding</a></button>
+                            <button><a href="https://wonderchat.io/?utm_term=building%20a%20chatbot&utm_campaign=US-Search&utm_source=bing&utm_medium=ppc&matchtype=e&msclkid=f905bb286e0719766962dce177743acd">Chatbot Creation</a></button>
                             <button><a href="https://www.tensorflow.org/">TensorFlow</a></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="course-card">
-                <h3>High School Innovators</h3>
-                <div class="grade-level">Grades 9-12</div>
+                <h4><div class="bordered-text">Elementary School Innovators</div></h4>
+                <div class="grade-level">Grades 4-5</div>
+                <strong><div class="grade-level">Advanced</div></strong>
                 <div class="course-details">
-                    <h4>AI Engineering Intensive</h4>
+                    <h4>AI Adventures</h4>
                     <ul>
-                        <li>💻 Python Programming Lab
+                        <li>💻 Talks about AI ethics!
                             <ul>
-                                <li>TensorFlow/Keras fundamentals</li>
-                                <li>Natural Language Processing projects</li>
+                                <li>Discussions about AI ethics!</li>
+                                <li>Best ways to use AI for school/life!</li>
                             </ul>
                         </li>
-                        <li>📊 Big Data Challenges
+                        <li>📊 Introduction to how these AI games/models work!
                             <ul>
-                                <li>Analyze Lawrence community datasets</li>
-                                <li>Predictive maintenance for school infrastructure</li>
-                            </ul>
+                                <li>Talk about how AI works!</li>
+                                <li>Revisit AI games to see how they do what they do!</li>
+                            </ul
                         </li>
                     </ul>
                     <div class="tools-used">
                         <strong>Professional Tools:</strong>
                         <div class="vertical-buttons">
-                            <button><a href="https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction">AI Python Coding</a></button>
-                            <button><a href="https://www.tensorflow.org/">TensorFlow</a></button>
+                            <button><a href="https://www.forbes.com/sites/nishatalagala/2022/05/31/ai-ethics-what-it-is-and-why-it-matters/">AI Ethics</a></button>
+                            <button><a href="https://pg-p.ctme.caltech.edu/blog/ai-ml/how-does-ai-work-a-beginners-guide">How AI Works</a></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="course-card">
-                <h3>High School Innovators</h3>
-                <div class="grade-level">Grades 9-12</div>
+                <h4><div class="bordered-text">Middle School Innovators</div></h4>
+                <div class="grade-level">Grades 6-8</div>
+                <strong><div class="grade-level">Advanced</div></strong>
                 <div class="course-details">
-                    <h4>AI Engineering Intensive</h4>
+                    <h4>AI Foundations</h4>
                     <ul>
-                        <li>💻 Python Programming Lab
+                        <li>💻 How to use AI in your life/school!
                             <ul>
-                                <li>TensorFlow/Keras fundamentals</li>
-                                <li>Natural Language Processing projects</li>
+                                <li>Revisit the AI ethics!</li>
+                                <li>Learn about the best ways to use AI to work!</li>
                             </ul>
                         </li>
-                        <li>📊 Big Data Challenges
+                        <li>📊 Learn about how to be independent from AI!
                             <ul>
-                                <li>Analyze Lawrence community datasets</li>
-                                <li>Predictive maintenance for school infrastructure</li>
+                                <li>Learn about not blindly trusting everything AI generates! </li>
+                                <li>Practice with hands-on activities!</li>
                             </ul>
                         </li>
                     </ul>
                     <div class="tools-used">
                         <strong>Professional Tools:</strong>
                         <div class="vertical-buttons">
-                            <button><a href="https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction">AI Python Coding</a></button>
-                            <button><a href="https://www.tensorflow.org/">TensorFlow</a></button>
+                            <button><a href="ChatGPT">ChatGPT</a></button>
+                            <button><a href="https://cloudlearn.co.uk/article/how-can-ai-help-students">How can it help students</a></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="course-card">
-                <h3>High School Innovators</h3>
-                <div class="grade-level">Grades 9-12</div>
+                <h4><div class="bordered-text">High School+ Innovators</div></h4>
+                <div class="grade-level">Grades 9-12+beyond</div>
+                <strong><div class="grade-level">Advanced</div></strong>
                 <div class="course-details">
-                    <h4>AI Engineering Intensive</h4>
+                    <h4>AI Engineering</h4>
                     <ul>
-                        <li>💻 Python Programming Lab
+                        <li>💻 Learn how to build an AI model from scratch!
                             <ul>
-                                <li>TensorFlow/Keras fundamentals</li>
-                                <li>Natural Language Processing projects</li>
+                                <li>Revisit the fundementals of how AI works!</li>
+                                <li>Step-by-step guidance on coding and training an AI model!</li>
                             </ul>
                         </li>
-                        <li>📊 Big Data Challenges
+                        <li>📊 For adults!
                             <ul>
-                                <li>Analyze Lawrence community datasets</li>
-                                <li>Predictive maintenance for school infrastructure</li>
+                                <li>Learn how AI can be used for good in your field!y</li>
+                                <li>Get comfortable with AI and using it for work!</li>
                             </ul>
                         </li>
                     </ul>
                     <div class="tools-used">
                         <strong>Professional Tools:</strong>
                         <div class="vertical-buttons">
-                            <button><a href="https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction">AI Python Coding</a></button>
-                            <button><a href="https://www.tensorflow.org/">TensorFlow</a></button>
+                            <button><a href="https://colab.research.google.com/#scrollTo=GJBs_flRovLc">AI Python Coding</a></button>
+                            <button><a href="https://www.goskills.com/Resources/Use-AI-workplace">AI used in work</a></button>
                         </div>
                     </div>
                 </div>
@@ -305,8 +419,9 @@
         </div>
     </section>
     <footer>
-        <h6>© 2024 Don't Panic AI Tutors - Proudly serving Lawrence, Kansas students - All Rights Reserved</h6>
-        <h6>We are actively seeking opportunities to collaborate with Lawrence Public Schools (USD 497) to support AI fluency initiatives. If you’re interested in working with us, let’s connect!</h6>
-</footer>
+        <h5>© 2024 Don't Panic AI Tutors - Proudly serving Kansans - All Rights Reserved</h5>
+        <h5>Disclaimer: Our website is live, but we are still in the process of rolling out our services! We are excited to launch soon! Thank you for your patience and support!</h5>
+        <h5>We are actively seeking opportunities to collaborate with experts to support AI fluency initiatives. If you’re interested in working with us, let’s connect!</h5>
+    </footer>
 </body>
 </html>
