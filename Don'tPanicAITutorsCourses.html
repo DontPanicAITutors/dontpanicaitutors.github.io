@@ -10,7 +10,7 @@
             line-height: 1.8;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
+            background-color: #ffffff;
             font-size: 18px;
         }
         .courses {
@@ -38,7 +38,7 @@
             font-size: 1.1rem;
         }
         .course-card {
-            background-color: white;
+            background-color: #f4f7f6;
             padding: 1.5rem;
             border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -120,6 +120,11 @@
             transform: translateX(-100%);
         }
     }
+    @media (min-width: 1024px) {
+    .courses {
+        grid-template-columns: repeat(3, 1fr); /* 3 course cards per row */
+    }
+}
     a {
         color: #ffffff;
         text-decoration: none;
@@ -144,7 +149,16 @@
     justify-content: center; /* Center horizontally */
     width: 100%; /* Ensure the container takes full width */
     margin-bottom: 0px; /* Space between buttons */
-    }    
+    }
+    .logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: block;
+            padding: 1rem 0;
+            border-radius: 25px;
+        }
     </style>
 </head>
 <body>
